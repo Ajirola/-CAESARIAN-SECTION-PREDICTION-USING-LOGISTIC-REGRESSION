@@ -215,7 +215,7 @@ log(p / (1 - p)) = β0 + β1*Age + β2*Delivery_Type + β3*Blood_Pressure + β4*
 | Blood_Pressure_normal    | –1.3993         | 0.045   | [–2.769, –0.030]         | ✅ Yes        |
 | Heart_Problem_inept      | +1.4643         | 0.013   | [+0.303, +2.626]         | ✅ Yes        |
 
-## 🧠 Predictors Interpretation
+## Predictors Interpretation
 
 - **Delivery_Type_timely**  
 
