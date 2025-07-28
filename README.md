@@ -74,7 +74,8 @@ This project aims to:
 ## 📊 DATA SOURCE
 The data was obtained from kaggle website 
 
-Here's the link to the dataset: https://www.kaggle.com/datasets/amir75/caesarean-section-classification?utm_source=chatgpt.com
+Here's the link to the dataset: [Kaggle - Caesarian Section Classification Data](https://www.kaggle.com/datasets/rashikrahmanpritom/caesarian-section-classification)
+
 
 ## 📂 Dataset Description
 Dataset: Caesarean Section Classification  
@@ -223,9 +224,63 @@ log(p / (1 - p)) = β0 + β1*Age + β2*Delivery_Type + β3*Blood_Pressure + β4*
 - **Blood_Pressure_normal**  
 
    Having **normal BP** **reduced odds** of CS by ~75% compared to high BP
-  
 - **Heart_Problem_inept**  
 
   Presence of heart condition **increased CS risk** by over 4x
   
 - **Age** and **BP Low** were not statistically significant in this dataset.
+  
+  ## 📏 Model Evaluation
+
+The performance of the logistic regression model was assessed using classification metrics and ROC AUC score.
+
+### 📊 Evaluation Metrics
+
+| Metric              | Value   |
+|---------------------|---------|
+| **Accuracy**        | 68.75%  |
+| **Precision (Yes)** | 69%     |
+| **Recall (Yes)**    | 90%     |
+| **F1 Score (Yes)**  | 78%     |
+| **ROC AUC Score**   | 0.725   |
+
+### ✅ Interpretation
+
+- **Accuracy (68.75%)**: The model correctly predicted ~69% of all outcomes.
+
+- **Recall (90%)**: The model was excellent at identifying actual CS cases — a crucial metric in healthcare where missing a positive case can be costly.
+
+- **Precision (69%)**: Of all cases predicted as CS, 69% were correct.
+
+- **F1 Score (78%)**: Good balance between precision and recall.
+
+- **ROC AUC Score (0.725)**: Indicates fair discriminative ability — the model can distinguish between CS and non-CS cases about 73% of the time.
+
+> ✅ **Conclusion**: The model is well-calibrated for early identification of patients likely to undergo Caesarean delivery, with strong recall and acceptable overall performance.
+
+## ✅ Recommendations
+
+1️⃣ **Integrate Model into Early Screening**: Flag patients with heart issues and high BP for closer monitoring.
+
+2️⃣ **Reevaluate Timely Delivery Patterns**: Investigate why CS rates are high even for timely deliveries consider delivery context or doctor preference.
+
+3️⃣ **Train Staff on Risk Factors**: Ensure clinicians understand the predictors of CS and the value of predictive tools in planning interventions.
+
+4️⃣ **Expand Data for Stronger Modeling**: Larger datasets may uncover more significant relationships, especially for non-significant features like age.
+
+## 🙏 Acknowledgement
+
+This project is made possible using publicly available data from **Kaggle**.  
+Special thanks to the dataset contributors for sharing valuable health-related data that supports learning and research in maternal care and predictive modeling.
+
+This project is for educational and portfolio purposes only.
+
+## 📞 Contact
+
+Created by **Ajirola Amudat**  
+🔗 [LinkedIn](https://www.linkedin.com/in/ajirolaamudat)
+
+📫 For questions or collaborations: [Send a message](https://www.linkedin.com/in/ajirolaamudat)
+
+  
+![Screenshot](Screenshot_20250311-144911.jpg)
