@@ -198,7 +198,7 @@ The correlation heatmap helps identify **linear relationships** between independ
 
 ## 📊 Logistic Regression Coefficient Summary
 
-The table below shows the logistic regression results, including coefficients, standard errors, z-values, p-values, and 95% confidence intervals for each predictor.
+The table below shows the logistic regression results, including coefficients, p-values, and 95% confidence intervals for each predictor.
 
 ### Model Formula:
 
@@ -247,7 +247,7 @@ The performance of the logistic regression model was assessed using classificati
 
 - **Accuracy (68.75%)**: The model correctly predicted ~69% of all outcomes.
 
-- **Recall (90%)**: The model was excellent at identifying actual CS cases — a crucial metric in healthcare where missing a positive case can be costly.
+- **Recall (90%)**: The model was excellent at identifying actual CS cases, a crucial metric in healthcare where missing a positive case can be costly.
 
 - **Precision (69%)**: Of all cases predicted as CS, 69% were correct.
 
