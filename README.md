@@ -3,23 +3,42 @@
 ## 📑 TABLE OF CONTENTS
 
 [Project Overview](#-project-overview)  
+
 [Description](#-description)  
-[Problem Statement](#-problem-statement)  
+
+[Problem Statement](#-problem-statement) 
+
 [Project Objective](#-project-objective)  
+
 [Key Areas Analyzed](#-key-areas-analyzed)  
+
 [Data Source](#-data-source)  
+
 [Dataset Description](#-dataset-description)  
+
 [Tools](#-tools)  
+
 [Methodology](#-methodology)  
+
 [Data Cleaning](#-data-cleaning)  
+
 [Exploratory Data Analysis (EDA)](#-exploratory-data-analysis-eda)  
+
 [Visual Insights](#-visual-insights)  
+
 [Summary Statistics Interpretation](#-summary-statistics-interpretation)  
+
 [Logistic Regression Model](#-logistic-regression-model)  
+
 [Predictors Interpretation](#-predictors-interpretation)  
+
 [Model Evaluation](#-model-evaluation)  
+
+
 [Recommendation](#-recommendation)  
+
 [Acknowledgement](#-acknowledgement)  
+
 [Contact](#-contact)
 
 
@@ -103,6 +122,24 @@ Records: 80 patient cases
 
 ✅ Dropped redundant **Delivey No** column
 
+## 🧮 Summary Statistics Interpretation
 
+| Statistic | Age |
+|-----------|-----|
+| Mean      | 27.7 |
+| Median    | 27   |
+| Std Dev   | 5.0 |
+| Min–Max   | 17–40 |
+
+Majority of patients were in their late 20s to early 30s, common childbearing age group. The dataset provides a good age range for modeling.
+
+## 📊 Statistical Insights and Data Visualization
+
+### 📊 Target Distribution
+
+- **Yes (CS delivery)**: 46  
+- **No**: 34  
+
+> Majority of deliveries resulted in Caesarean Sections (~58%).
 
 
