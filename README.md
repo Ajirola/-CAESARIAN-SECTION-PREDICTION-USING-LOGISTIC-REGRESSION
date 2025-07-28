@@ -22,11 +22,11 @@
 
 [Data Cleaning](#-data-cleaning)  
 
-[Exploratory Data Analysis (EDA)](#-exploratory-data-analysis-eda)  
+[Summary Statistics Interpretation](#-summary-statistics-interpretation)  
 
 [Visual Insights](#-visual-insights)  
 
-[Summary Statistics Interpretation](#-summary-statistics-interpretation)  
+[Multicollinearity Check (VIF)]()  
 
 [Logistic Regression Model](#-logistic-regression-model)  
 
@@ -160,3 +160,27 @@ Majority of deliveries resulted in Caesarean Sections (58%).
 ![Screenshot](Screenshot_20250728-190249.jpg)
 - More CS deliveries occurred in the **timely delivery group** than in the **premature group**.
 
+## 🧮 Multicollinearity Check (VIF)
+
+To ensure the logistic regression model is free from multicollinearity (highly correlated predictors), the **Variance Inflation Factor (VIF)** was calculated for each independent feature.
+
+### **Rule of Thumb**:
+  - **VIF < 5** → No multicollinearity concern  
+  - **VIF 5–10** → Moderate concern  
+  - **VIF > 10** → High multicollinearity (problematic)
+  - 
+### 📊 VIF Table
+
+| Feature                  | VIF       |
+|--------------------------|-----------|
+| Age                      | 1.08      |
+| Delivery_Type_premature  | 1.60      |
+| Delivery_Type_timely     | 1.70      |
+| Blood_Pressure_low       | 1.52      |
+| Blood_Pressure_normal    | 1.61      |
+| Heart_Problem_inept      | 1.14      |
+
+### ✅ Interpretation
+All the features in this model have **VIFs well below 2**, indicating **no multicollinearity issue**.
+
+✅ The logistic regression model is stable, and the predictor coefficients are interpretable and reliable.
