@@ -1,34 +1,36 @@
 # CAESARIAN-SECTION-PREDICTION-USING-LOGISTIC-REGRESSION
 
 ## 📑 TABLE OF CONTENTS
-- [Project Overview](#project-overview)
-- [Description](#description)
-- [Problem Statement](#problem-statement)
-- [Project Objective](#project-objective)
-- [Key Areas Analyzed](#key-areas-analyzed)
-- [Data Source](#data-source)
-- [Dataset Description](#dataset-description)
-- [Tools Used](#tools-used)
-- [Methodology](#methodology)
-- [Data Cleaning](#data-cleaning)
-- [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
-- [Visual Interpretations](#visual-interpretations)
-- [Summary Statistics Interpretation](#summary-statistics-interpretation)
-- [Logistic Regression & Predictors](#logistic-regression--predictors)
-- [Model Performance](#model-performance)
-- [Recommendations](#recommendations)
-- [Acknowledgement](#acknowledgement)
-- [Contact](#contact)
+
+[Project Overview](#-project-overview)  
+[Description](#-description)  
+[Problem Statement](#-problem-statement)  
+[Project Objective](#-project-objective)  
+[Key Areas Analyzed](#-key-areas-analyzed)  
+[Data Source](#-data-source)  
+[Dataset Description](#-dataset-description)  
+[Tools](#-tools)  
+[Methodology](#-methodology)  
+[Data Cleaning](#-data-cleaning)  
+[Exploratory Data Analysis (EDA)](#-exploratory-data-analysis-eda)  
+[Visual Insights](#-visual-insights)  
+[Summary Statistics Interpretation](#-summary-statistics-interpretation)  
+[Logistic Regression Model](#-logistic-regression-model)  
+[Predictors Interpretation](#-predictors-interpretation)  
+[Model Evaluation](#-model-evaluation)  
+[Recommendation](#-recommendation)  
+[Acknowledgement](#-acknowledgement)  
+[Contact](#-contact)
 
 
 ## 📖 PROJECT OVERVIEW
-This project analyzes a medical dataset to identify key factors influencing Caesarian section (CS) deliveries among women. A logistic regression model is built to predict the likelihood of a CS delivery based on health and delivery characteristics.
+This project applies **logistic regression** to predict whether a woman will undergo a **Caesarean Section (CS)** based on features such as age, blood pressure, delivery type, and heart condition. The goal is to identify significant predictors that influence CS delivery decisions using statistical and visual analysis.
 
 ## 🔍 DESCRIPTION
-Caesarian deliveries, while life-saving, are often linked to maternal health risks when unnecessarily conducted. Predicting CS likelihood based on patient data can guide health providers in personalized care planning.
+Caesarean deliveries are critical for managing high-risk pregnancies but can be overused if not guided by evidence. Predicting CS risk helps clinicians tailor care and avoid unnecessary procedures.
 
 ## ❓ PROBLEM STATEMENT
-Many CS procedures are influenced by factors like maternal age, delivery type, blood pressure, and heart health. Without data-driven insight, it’s difficult to distinguish medically necessary CS from avoidable ones, potentially leading to overuse or under-preparedness.
+Health professionals lack predictive insights into CS risk, leading to under- or over-utilization. Early predictions can assist in planning safer delivery options for mothers.
 
 ## 🎯 PROJECT OBJECTIVE
 This project aims to:
@@ -42,15 +44,63 @@ This project aims to:
 ✅ Support better maternal healthcare decisions with data
 
 ## 🔍 KEY AREAS ANALYZED
-📌 Age distribution and risk
+📌 Caesarean distribution by blood pressure, age and delivery type
 
-📌 CS vs. Delivery type, blood pressure
+📌 Feature correlation using heatmaps 
 
-📌 Correlation between variables
+📌 Significant predictors via logistic regression 
 
-📌 Significant predictors via logistic regression
+📌 Performance evaluation (accuracy, AUC)
+
 
 ## 📊 DATA SOURCE
 The data was obtained from kaggle website 
 
 Here's the link to the dataset: https://www.kaggle.com/datasets/amir75/caesarean-section-classification?utm_source=chatgpt.com
+
+## 📂 Dataset Description
+Dataset: Caesarean Section Classification  
+
+Records: 80 patient cases  
+  
+
+| Column             | Description                           |
+|--------------------|---------------------------------------|
+| Age                | Mother's age                          |
+| Delivery Type      | Timely or Premature                   |
+| Blood Pressure     | Normal, High, or Low                  |
+| Heart Problem      | Yes or No                             |
+| Caesarian          | Target variable (Yes or No)           |
+
+
+## ⚒️ Tools Used
+ **Python**(**Pandas**, **Seaborn**, **Matplotlib**
+**Statsmodels**, **Scikit-learn**)
+
+## 📒 Methodology
+1️⃣ Load and clean dataset  
+
+2️⃣ Standardize and encode variables  
+
+3️⃣ Perform exploratory data analysis  
+
+4️⃣ Check multicollinearity using VIF  
+
+5️⃣ Train logistic regression model  
+
+6️⃣ Interpret model coefficients  
+
+7️⃣ Evaluate model performance
+
+## 🧹 Data Cleaning
+✅ Renamed and standardized columns  
+
+✅ Encoded categorical variables (e.g., Caesarian 0/1)  
+
+✅ Verified **no missing** or duplicate values  
+
+✅ Converted boolean features to integers  
+
+✅ Dropped redundant **Delivey No** column
+
+
