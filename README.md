@@ -136,6 +136,7 @@ Majority of patients were in their late 20s to early 30s, common childbearing ag
 ## 📊 Statistical Insights and Data Visualization
 
 ### 📊 Target Distribution
+![Screenshot](Screenshot_20250728-190206.jpg)
 
 - **Yes (CS delivery)**: 46  
 - **No**: 34  
