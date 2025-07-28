@@ -141,6 +141,17 @@ Majority of patients were in their late 20s to early 30s, common childbearing ag
 - **Yes (CS delivery)**: 46  
 - **No**: 34  
 
-> Majority of deliveries resulted in Caesarean Sections (~58%).
+Majority of deliveries resulted in Caesarean Sections (~58%).
+
+### 📊 Age Distribution by Caesarian Section 
+![Screenshot](Screenshot_20250728-190219.jpg)
+- **Higher age** slightly associated with CS
+
+### 📊 Blood Pressure by Caesarian Section 
+![Screenshot](Screenshot_20250728-190234.jpg)
+- **High blood pressure** more common in CS deliveries
 
 
+### 📊 Delivery Type by Caesarian Section 
+![Screenshot](Screenshot_20250728-190249.jpg)
+- **Premature deliveries** more likely to lead to CS 
