@@ -134,6 +134,8 @@ Records: 80 patient cases
 Majority of patients were in their late 20s to early 30s, common childbearing age group. The dataset provides a good age range for modeling.
 
 ## 📊 Statistical Insights and Data Visualization
+In this section, we explore the relationship between patient characteristics and Caesarean section outcomes through several visualizations.
+
 
 ### 📊 Target Distribution
 ![Screenshot](Screenshot_20250728-190206.jpg)
@@ -141,7 +143,7 @@ Majority of patients were in their late 20s to early 30s, common childbearing ag
 - **Yes (CS delivery)**: 46  
 - **No**: 34  
 
-Majority of deliveries resulted in Caesarean Sections (~58%).
+Majority of deliveries resulted in Caesarean Sections (58%).
 
 ### 📊 Age Distribution by Caesarian Section 
 ![Screenshot](Screenshot_20250728-190219.jpg)
@@ -149,9 +151,12 @@ Majority of deliveries resulted in Caesarean Sections (~58%).
 
 ### 📊 Blood Pressure by Caesarian Section 
 ![Screenshot](Screenshot_20250728-190234.jpg)
-- **High blood pressure** more common in CS deliveries
+- Most CS deliveries occurred among women with **normal blood pressure**.
+  
+- Fewer CS cases were seen in **low and high BP groups**.
 
 
 ### 📊 Delivery Type by Caesarian Section 
 ![Screenshot](Screenshot_20250728-190249.jpg)
-- **Premature deliveries** more likely to lead to CS 
+- More CS deliveries occurred in the **timely delivery group** than in the **premature group**.
+
