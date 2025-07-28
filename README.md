@@ -34,7 +34,6 @@
 
 [Model Evaluation](#-model-evaluation)  
 
-
 [Recommendation](#-recommendation)  
 
 [Acknowledgement](#-acknowledgement)  
@@ -168,7 +167,7 @@ To ensure the logistic regression model is free from multicollinearity (highly c
   - **VIF < 5** → No multicollinearity concern  
   - **VIF 5–10** → Moderate concern  
   - **VIF > 10** → High multicollinearity (problematic)
-  - 
+    
 ### 📊 VIF Table
 
 | Feature                  | VIF       |
@@ -184,3 +183,15 @@ To ensure the logistic regression model is free from multicollinearity (highly c
 All the features in this model have **VIFs well below 2**, indicating **no multicollinearity issue**.
 
 ✅ The logistic regression model is stable, and the predictor coefficients are interpretable and reliable.
+
+### 🔄 Correlation Matrix and Multicollinearity
+The correlation heatmap helps identify **linear relationships** between independent variables. High correlation between predictors (typically above **0.8 or below –0.8**) can signal **multicollinearity**, which can distort regression model estimates.
+
+![Screenshot](Screenshot_20250728-190324.jpg)
+### ✅ Interpretation:
+
+- **No strong correlation (> 0.8)** was observed between any pair of independent variables.
+- Most feature correlations were **weak to moderate** (ranging between **–0.3 and +0.4**).
+- This suggests that the predictors are **not linearly dependent** on each other.
+
+ ✅ **Conclusion**: The correlation matrix confirms that **multicollinearity is not present**, which supports the validity of using logistic regression. This is consistent with the results from the **Variance Inflation Factor (VIF)** analysis, where all VIFs were **< 2**.
