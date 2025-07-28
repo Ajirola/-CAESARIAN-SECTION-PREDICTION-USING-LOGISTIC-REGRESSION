@@ -253,7 +253,7 @@ The performance of the logistic regression model was assessed using classificati
 
 - **F1 Score (78%)**: Good balance between precision and recall.
 
-- **ROC AUC Score (0.725)**: Indicates fair discriminative ability — the model can distinguish between CS and non-CS cases about 73% of the time.
+- **ROC AUC Score (0.725)**: Indicates fair discriminative ability, the model can distinguish between CS and non-CS cases about 73% of the time.
 
 ✅ **Conclusion**: The model is well-calibrated for early identification of patients likely to undergo Caesarean delivery, with strong recall and acceptable overall performance.
 
