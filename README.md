@@ -74,7 +74,7 @@ This project aims to:
 ## 📊 DATA SOURCE
 The data was obtained from kaggle website 
 
-Here's the link to the dataset: [Kaggle - Caesarian Section Classification Data](https://www.kaggle.com/datasets/rashikrahmanpritom/caesarian-section-classification)
+Here's the link to the dataset: [Kaggle - Caesarian Section Classification Data](https://www.kaggle.com/datasets/amir75/caesarean-section-classification?utm_source=chatgpt.com)
 
 
 ## 📂 Dataset Description
@@ -256,7 +256,7 @@ The performance of the logistic regression model was assessed using classificati
 
 - **ROC AUC Score (0.725)**: Indicates fair discriminative ability — the model can distinguish between CS and non-CS cases about 73% of the time.
 
-> ✅ **Conclusion**: The model is well-calibrated for early identification of patients likely to undergo Caesarean delivery, with strong recall and acceptable overall performance.
+✅ **Conclusion**: The model is well-calibrated for early identification of patients likely to undergo Caesarean delivery, with strong recall and acceptable overall performance.
 
 ## ✅ Recommendations
 
