@@ -194,4 +194,38 @@ The correlation heatmap helps identify **linear relationships** between independ
 - Most feature correlations were **weak to moderate** (ranging between **–0.3 and +0.4**).
 - This suggests that the predictors are **not linearly dependent** on each other.
 
- ✅ **Conclusion**: The correlation matrix confirms that **multicollinearity is not present**, which supports the validity of using logistic regression. This is consistent with the results from the **Variance Inflation Factor (VIF)** analysis, where all VIFs were **< 2**.
+ ✅ **Conclusion**: The correlation matrix confirms that **multicollinearity is not present**, which supports the validity of using logistic regression. This is consistent with the results from the **Variance Inflation Factor (VIF)** analysis,where all VIFs were **< 2**.
+
+## 📊 Logistic Regression Coefficient Summary
+
+The table below shows the logistic regression results, including coefficients, standard errors, z-values, p-values, and 95% confidence intervals for each predictor.
+
+### Model Formula:
+
+log(p / (1 - p)) = β0 + β1*Age + β2*Delivery_Type + β3*Blood_Pressure + β4*Heart_Problem
+
+### 🔢 Regression Output Table
+ Predictor                | Coefficient (β) | p-value | 95% Confidence Interval | Significant |
+|--------------------------|-----------------|---------|--------------------------|--------------|
+| Age                      | +0.0095         | 0.859   | [–0.095, +0.114]         | ❌ No         |
+| Delivery_Type_premature  | +0.4224         | 0.601   | [–1.160, +2.005]         | ❌ No         |
+| Delivery_Type_timely     | +1.5988         | 0.031   | [+0.145, +3.052]         | ✅ Yes        |
+| Blood_Pressure_low       | +0.4637         | 0.553   | [–1.068, +1.995]         | ❌ No         |
+| Blood_Pressure_normal    | –1.3993         | 0.045   | [–2.769, –0.030]         | ✅ Yes        |
+| Heart_Problem_inept      | +1.4643         | 0.013   | [+0.303, +2.626]         | ✅ Yes        |
+
+## 🧠 Predictors Interpretation
+
+- **Delivery_Type_timely**  
+
+  Patients with timely delivery were **~5x more likely** to have CS.
+  
+- **Blood_Pressure_normal**  
+
+   Having **normal BP** **reduced odds** of CS by ~75% compared to high BP
+  
+- **Heart_Problem_inept**  
+
+  Presence of heart condition **increased CS risk** by over 4x
+  
+- **Age** and **BP Low** were not statistically significant in this dataset.
